@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-<body data-spy="scroll" data-target=".navbar" >
+<body data-spy="scroll" data-target="#myNavbar" data-offset="0">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -107,45 +107,32 @@
     <div class="row">
         <div class="col-xs-0 col-lg-4"></div>
         <div class="col-xs-12 col-lg-4">
-            <h1>Contact Me</h1>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="First Name Last Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="text-area">Message</label>
-                    <textarea class="form-control" id="text-area" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <div class="connect" >
+                <h1>Connect With Me</h1>
+                <br>
+                <h4 id="email">gilberto.rascon.serventi@gmail.com</h4>
+                <br>
+                <ul id="connect">
+                    <li>
+                        <h2><a href="https://www.linkedin.com/in/gilberto-rascon/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="https://github.com/Grascon" target="_blank"><i class="fab fa-github"></i></a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="https://stackoverflow.com/users/9064040/gilberto" target="_blank"><i class="fab fa-stack-overflow"></i></a></h2>
+                    </li>
+                </ul> 
+            </div>
         </div>
         <div class="col-xs-0 col-lg-4"></div>
     </div>
 </div>
     <footer>
-        <div class="connect" >
-            <h3>Connect With Me</h3>
-            <h4 id="email">gilberto.rascon.serventi@gmail.com</h4>
-            <ul id="connect">
-                <li>
-                    <h2><a href="https://www.linkedin.com/in/gilberto-rascon/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h2>
-                </li>
-                <li>
-                    <h2><a href="https://github.com/Grascon" target="_blank"><i class="fab fa-github"></i></a></h2>
-                </li>
-                <li>
-                    <h2><a href="https://stackoverflow.com/users/9064040/gilberto" target="_blank"><i class="fab fa-stack-overflow"></i></a></h2>
-                </li>
-            </ul> 
-        </div>
         <div>&copy 2018 Copyright Gilberto Rascón</div>       
-        
     </footer>
-    
 </body>
+<script type="text/javascript">
+    $('body').scrollspy({ target: '#myNavbar' })
+</script>
 </html>
