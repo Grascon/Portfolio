@@ -2,31 +2,43 @@ body {
     position: relative;
     font-family: 'Orbitron', sans-serif;
 }
+img{
+    max-width: 100%;
+    margin: 5px;
+}
+.project-image{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+}
 #section1 {
-    padding-top:50px;
-    height:500px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
     color: #fff; 
     background-color: black;
 }
 #section2 {
-    padding-top:50px;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 50px;
     color: black; 
     background-color: white;
 }
 #section3 {
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
     color: #fff;
     background-color: black;
-    padding: 40px 5px;
 }
-
 #section4 {
-    padding-top:40px;
-    height:500px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
     color: black; 
     background-color: white;
 }
-
 .navbar-inverse .navbar-brand {
     color: goldenrod;
     font-family: 'Orbitron', sans-serif; 
@@ -80,7 +92,8 @@ p {
 }
 #email{
     color: goldenrod;
-    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 .fab{
     background-color: black;
