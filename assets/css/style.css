@@ -1,129 +1,134 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    position: relative;
-    font-family: 'Orbitron', sans-serif;
-}
-img{
-    max-width: 100%;
-    margin: 5px;
-}
-.project-image{
-    width: 200px;
-    height: 200px;
-    max-width: 100%;
-}
-#section1 {
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 50px;
-    color: #fff; 
-    background-color: black;
-}
-#section2 {
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 50px;
-    color: black; 
-    background-color: white;
-}
-#section3 {
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 50px;
-    color: #fff;
-    background-color: black;
-}
-#section4 {
-    width: 100vw;
-    min-height: 100vh;
-    padding-top: 50px;
-    color: black; 
-    background-color: white;
-}
-.navbar-inverse .navbar-brand {
-    color: goldenrod;
-    font-family: 'Orbitron', sans-serif; 
-}
-.nav, .navbar-nav, .navbar-right{
-    text-align: center;
-}
-#flash, #about-me {
-    color: goldenrod;
-}
-.glyphicon {
-    font-size: 50px;
-}
-#profile-image{
-    border-radius: 30px;
-    margin-top: 20px;
-}
-h1{
-    text-align: center;
-}
-h2{
-    margin-top: 10px;
-}
-.img-fluid {
-    border-radius: 20px;
-    border: 5px solid black;
-    margin: 1%;
-}
-#portfolio-link{
-    color: goldenrod;
-    font-weight: bolder;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-}
-
-#front-end{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
-}
-.connect {
-    text-align: center;
-}
-#connect {
-    list-style: none;
-    padding: 0;
-    display: inline-flex
-}
-#email{
-    color: goldenrod;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-}
-.fab{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    border: 5px solid goldenrod;
-    margin: 10px;
-    border-radius: 25px;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-}
-.fab:hover{
-    background-color: white;
-    color: goldenrod;
-    padding: 20px;
-    border: 5px solid goldenrod;
-    margin: 10px;
-    border-radius: 25px;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-}
-footer{
-    position: absolute;
+body{
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    padding: 20px;
+}
+nav{
+    background-color: #272935;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 75px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+h3, h4{
+    font-family: 'Orbitron', sans-serif;
+    color: #272935;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #cc0033, #ccc);
+}
+footer {
+    background-color: #272935;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+/* I.D's */
+
+#mainNavbar .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+#mainNavbar .navbar-brand:hover {
+    color: #cc0033;
+}
+#mainNavbar .nav-link {
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
-    font-size: 18px;
-    background-color: #222;
-    color: goldenrod;
+    color: white;
+}
+#mainNavbar .nav-link:hover {
+    color: #cc0033;
+}
+#landing {
+    /*Photo by david ross on Unsplash*/
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,37.5)), url(../img/Desert.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#portfolio_image{
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+#contact_info{
+    list-style: none;
+}
+.mobile_view{
+    display: none;
+}
+
+/* Classes */
+
+.project_image {
+    width: 300px;
+    height: 150px;
+    max-width: 100%;;
+}
+.project_image:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.img-thumbnail{
+    margin: 5px;
+    text-align: center;
+}
+.display_icon{
+    background: #cc0033;
+    color: #fff;
+    padding: 2%;
+    font-size: 50px;
+    border-radius: 10%;
+    margin-right: 5%;
+}
+.display_icon:hover{
+    background: #272935;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width : 768px) {
+    section {
+        height: inherit;
+    }
+    #landing, #contact{
+        height: 100vh;;
+    }
+    #mainNavbar{
+        display: inline-flex;
+    }
+    #desktop_nav{
+        display: none;
+    }
+    .desktop_view{
+        display: none;
+    }
+    .mobile_view{
+        display: inline;
+    }
+    .display_icon{
+        font-size: 45px;
+    }
 }
