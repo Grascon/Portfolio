@@ -23,7 +23,7 @@ ul{
 h2 {
     font-family: 'Poppins', sans-serif;
 }
-h3, h4{
+h3, h4, h5{
     font-family: 'Orbitron', sans-serif;
     color: #272935;
 }
@@ -38,9 +38,7 @@ footer {
     font-family: 'Orbitron', sans-serif;
     color: white;
 }
-
 /* I.D's */
-
 #mainNavbar .navbar-brand {
     font-family: 'Orbitron', sans-serif;
     color: white;
@@ -63,22 +61,18 @@ footer {
     background-position: center;
     color: white;
 }
-
 #portfolio_image{
     height: 300px;
     width: 300px;
     border-radius: 10%;
 }
-
 #contact_info{
     list-style: none;
 }
 .mobile_view{
     display: none;
 }
-
 /* Classes */
-
 .project_image {
     width: 300px;
     height: 150px;
@@ -105,28 +99,13 @@ footer {
     transform: scale(1.05);
     transition: all 0.5s;
 }
-
 /* Media Queries */
-
-
 @media only screen and (max-width : 768px) {
     section {
         height: inherit;
     }
     #landing, #contact{
         height: 100vh;;
-    }
-    #mainNavbar{
-        display: inline-flex;
-    }
-    #desktop_nav{
-        display: none;
-    }
-    .desktop_view{
-        display: none;
-    }
-    .mobile_view{
-        display: inline;
     }
     .display_icon{
         font-size: 45px;
